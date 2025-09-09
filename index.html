@@ -1,0 +1,1591 @@
+<html lang="en">
+
+<head>
+    <title>demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @media(min-width:1024px) {
+            .top_header_desktop {
+                display: block !important;
+            }
+
+            .header_desktop {
+                display: block !important;
+            }
+
+            .header_mobile {
+                display: none !important;
+            }
+
+            .top_header_mobile {
+                display: none !important;
+            }
+
+            .holl_item3 {
+                display: block !important;
+            }
+
+            .holl_item4 {
+                display: block !important;
+            }
+
+            .item_mb {
+                display: block !important;
+            }
+
+            .footer_section {
+                display: block !important;
+            }
+
+            .top_header_desktop {
+                display: block !important;
+            }
+
+            .footer_section_mobile {
+                display: none !important;
+            }
+
+            .download_app {
+                display: block !important;
+            }
+
+            .download_app_mobile {
+                display: none !important;
+            }
+        }
+
+        @media(max-width:994px) {
+            .top_header_desktop {
+                display: none !important;
+            }
+
+            .download_app {
+                display: none !important;
+            }
+
+            .download_app_mobile {
+                display: block !important;
+            }
+
+            .header_desktop {
+                display: none !important;
+            }
+
+            .header_mobile {
+                display: block !important;
+            }
+
+            .top_header_mobile {
+                display: block !important;
+            }
+
+            .holl_item3 {
+                display: none !important;
+            }
+
+            .holl_item4 {
+                display: none !important;
+            }
+
+            .item_mb {
+                display: none !important;
+            }
+
+            .brand_item_mobile {
+                display: none !important;
+            }
+
+            .heading_mobile {
+                text-align: center;
+            }
+
+            .heaading_font {
+                font-size: 25px;
+            }
+
+            .item_about_mobile {
+                width: 75%;
+                font-size: 20px;
+            }
+
+            .offer_silder_mobile {
+                margin-top: 50px;
+            }
+
+            .brand_hading_mobile {
+                font-size: 30px;
+                margin-top: 33px;
+                margin-bottom: 25px;
+            }
+
+            .brand_img {
+                height: 120px;
+                width: 85%;
+            }
+
+            .barnd_text {
+                font-size: 25px;
+            }
+
+            .slider_main_mobile {
+                width: 100%;
+                height: 350px;
+            }
+
+            .special_off_text {
+                font-size: 35px;
+                text-align: center;
+            }
+
+            .a_text {
+                padding-left: 130px;
+            }
+
+            .a_text1 {
+                padding-left: 100px;
+            }
+
+            .footer_section {
+                display: none !important;
+            }
+
+            .footer_section_mobile {
+                display: block !important;
+            }
+
+            .other_item_dekstop {
+                display: none !important;
+            }
+        }
+
+        .footer_section_mobile {
+            background-color: black;
+            height: 1200px;
+            color: white;
+        }
+
+        .top_header {
+            background-image: url(img/haderbg.jpg);
+            color: white;
+            height: 50px;
+            background-size: cover;
+        }
+
+        .top_header_row {
+            padding-top: 8px;
+        }
+
+        .top_header_dicount {
+            background-color: rgba(255, 68, 0, 0.199);
+        }
+
+        .hader_button {
+            padding-left: 80px;
+        }
+
+        .hader_button button {
+            background: transparent;
+            border: 1px solid white;
+            padding: 6px;
+            width: 150%;
+        }
+
+        .first_slider {
+            background-image: url('img/slider_bg.jpg');
+            background-size: cover;
+            height: 350px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .slider_contain {
+            padding-top: 20px;
+            padding-left: 80px;
+        }
+
+        .holl_item_section {
+            height: 300px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .holl_item1 {
+            background-repeat: no-repeat;
+            background-size: 280px 200px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        .holl_item_text {
+            padding-top: 90px;
+            color: white;
+        }
+
+        .spport_items {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .spport_item i {
+            font-size: 50px;
+        }
+
+        .header {
+            height: 100px;
+        }
+
+        .logo {
+            padding-top: 30px;
+        }
+
+        .search {
+            height: 100px;
+        }
+
+        .serach_contain {
+            height: 50px;
+            border: 3px solid rgb(245, 153, 16);
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        .serach_item {
+            height: 35px;
+            margin-top: 8px;
+        }
+
+        .header_menu {
+            margin-top: 5px;
+        }
+
+        .header_menu li {
+            display: inline;
+            font-size: 12px;
+            padding-right: 10px;
+            border-right: 1px solid rgb(207, 201, 201);
+        }
+
+        .header_menu ul {
+            padding: 0;
+        }
+
+        .icon_s {
+            font-size: 30px;
+            padding-top: 35px;
+            padding-left: 10px;
+        }
+
+        .top_header_mobile {
+            height: 80px;
+            padding: 22px;
+        }
+
+        .shop_menu {
+            margin-top: 25px;
+            text-align: right;
+        }
+
+        .shop_menu li {
+            display: inline;
+            margin-right: 20px;
+            font-size: 12px;
+        }
+
+        .shop_menu ul {
+            padding: 0;
+
+        }
+
+        .shop_item {
+            height: 30px;
+            padding: 5px;
+            margin-top: 5px;
+            border-top: 1px solid rgb(207, 201, 201);
+        }
+
+        .item_shope {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .item_about {
+            background-color: #fff;
+            padding: 2px;
+            text-align: center;
+        }
+
+        .offers {
+            background-size: cover;
+            height: 375px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+
+        }
+
+        .offer_silder2 {
+            height: 350px;
+            color: #fff;
+            padding-left: 20px;
+            padding-top: 138px;
+            width: 100%;
+        }
+
+        .offer_silder1 {
+            height: 350px;
+            width: 100%;
+            color: #fff;
+            padding-left: 20px;
+            padding-top: 75px;
+        }
+
+        .timer {
+            background-color: #c9c6c646;
+            margin-left: 5px;
+            text-align: center;
+        }
+
+        .slider_main {
+            width: 112%;
+            height: 205px;
+            padding-right: 10px;
+        }
+
+        .box_1 {
+            width: 100px;
+            height: 100px;
+            padding-top: 5px;
+            padding-right: 8px;
+
+        }
+
+        .download_app {
+            background-image: url(img/bg_downlod.jpg);
+            height: 310px;
+            margin-top: 35px;
+            margin-bottom: 40px;
+        }
+
+        .download_app_mobile {
+            background-image: url(img/bg_downlod.jpg);
+            height: 742px;
+            margin-top: 35px;
+            margin-bottom: 40px;
+        }
+
+        .button_contain {
+            padding-left: 25px;
+            padding-top: 80px;
+        }
+
+        .button_contain_mobile {
+            padding-left: 25px;
+            padding-top: 50px;
+        }
+
+        .l_item {
+            background-repeat: no-repeat;
+            background-size: 375px 250px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        .item_text {
+            padding-top: 140px;
+            color: white;
+        }
+
+        .client_brand {
+            height: 100px;
+            border: 1px solid rgb(161, 160, 158);
+            margin-bottom: 20px;
+        }
+
+        .brand_logo {
+            padding-top: 25px;
+        }
+
+        .footer_section {
+            background-color: black;
+            height: 400px;
+            color: white;
+        }
+
+        .footer_header {
+            margin-bottom: 31px;
+            padding: 0;
+        }
+
+        .footer_col ul li {
+            list-style: none;
+            font-weight: 100;
+            padding-bottom: 15px;
+            color: rgba(150, 147, 147, 0.685);
+
+        }
+
+        .footer_col ul {
+            padding: 0;
+        }
+
+        .footer_icon {
+            font-size: 20px;
+            color: orangered;
+        }
+
+        .footer_row {
+            padding-top: 40px;
+        }
+
+        .last_row {
+            padding-top: 35px;
+            border-top: 1px solid rgba(150, 147, 147, 0.685);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid top_header top_header_desktop">
+        <div class="container">
+            <div class="row top_header_row">
+                <div class="col-md-5 col-xs-5">
+                    <h4>SENIOR’S MEMBER DISCOUNT DAYS! desktop</h4>
+                </div>
+                <div class="col-md-3 col--3 top_header_dicount">
+                    <h5 style="padding-left: 40px;">SAVE <span style="color: rgb(245, 153, 16);">25% OFF</span> DISCOUNT
+                    </h5>
+                </div>
+                <div class="col-md-1 col-xs-1"></div>
+                <div class="col-md-2 col-xs-2 hader_button">
+                    <button>SHOP NOW<i class="fa fa-long-arrow-right"
+                            style="font-size: 15px;padding-left: 10px;"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid  header_mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="top_header" style="height: 60px;">
+                        <h2 style="text-align: center;padding-top: 15px;">SAVE <span
+                                style="color: rgb(245, 153, 16);">25% OFF</span>
+                            DISCOUNT
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  top_header_mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="logo_mb">
+                        <img src="img/logo.png">
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                </div>
+                <div class="col-xs-5" style="height: 54px;text-align: right;margin-top: -40px;padding-left: 50px;">
+                    <i class="fa fa-heart-o icon_s" style="font-size: 40px;"></i>
+                    <i class="fa fa-shopping-bag icon_s" style="font-size: 40px;"></i>
+                    <i class="fa fa-bars" style="font-size: 40px;padding-left: 20px;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid header_desktop">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="logo">
+                        <img src="img/logo.png">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="search">
+                        <div class="row">
+                            <div class="col-md-12" style="padding-top: 10px;">
+                                <div class="serach_contain">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h5>All categories <i class="fa fa-angle-down"
+                                                    style="padding-left: 20px;"></i></h5>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input type="text" placeholder="Search in..."
+                                                style="border: none;width: 90%;height: 35px;">
+                                            <i class="fa fa-search"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="serach_item">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h5>Popular Searches:
+                                            </h5>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <ul class="header_menu">
+                                                <li>Dining Room</li>
+                                                <li>Bathroom</li>
+                                                <li>Bedroom</li>
+                                                <li>Lights</li>
+                                                <li>Post Types</li>
+                                                <li style="border: none;">Armchair</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-7" style="height: 100px;">
+                            <div class="row">
+                                <div class="col-md-6"><i class="fa fa-user"
+                                        style="font-size: 60px;padding-top: 20px;padding-left: 30px;"></i></div>
+                                <div class="col-md-6" style="padding-top: 30px;"> <span style="padding-top: 10px;">
+                                        Sing in
+                                        <b>Acccout</b>
+                                    </span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-5" style="height: 100px;">
+                            <i class="fa fa-heart-o icon_s"></i>
+                            <i class="fa fa-shopping-bag icon_s"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid first_slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-6 slider_contain">
+                    <h1 style="font-size: 60px;">UP TO 30% OFF</h1>
+                    <h1 style="color: orange; font-size: 55px;">$49.99 <span
+                            style="text-decoration-line: line-through;color: rgb(214, 220, 226); ">$69.99</span>
+                    </h1>
+                    <a href="#" style="text-decoration: none; color: black; font-size: 18px;">SHOPE NOW <i
+                            class="fa fa-long-arrow-right" style="font-size: 25px;padding-left: 10px;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid holl_item_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 holl_item1 col-xs-6" style="background-image: url(img/SL1.jpg);">
+                    <div class="holl_item_text">
+                        <h3>Armchair</h3>
+                        <p>10 Products</p>
+                    </div>
+                </div>
+                <div class="col-md-3 holl_item1 col-xs-6" style="background-image: url(img/SL2.jpg);">
+                    <div class="holl_item_text">
+                        <h3>Light</h3>
+                        <p>3 Products</p>
+                    </div>
+                </div>
+                <div class="col-md-3 holl_item1 col-xs-6 holl_item3" style="background-image: url(img/SL3.jpg);">
+                    <div class="holl_item_text">
+                        <h3>Accessories</h3>
+                        <p>11 Products</p>
+                    </div>
+                </div>
+                <div class="col-md-3 holl_item1 col-xs-6 holl_item4" style="background-image: url(img/SL4.jpg);">
+                    <div class="holl_item_text">
+                        <h3>Table</h3>
+                        <p>11 Products</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row spport_items">
+                <div class="col-md-3 spport_item col-xs-6">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-3">
+                            <i class="fa fa-comments">
+                            </i>
+                        </div>
+                        <div class="col-md-9 col-xs-9">
+                            <h4>Customer Support</h4>
+                            <h5>Call or email us 24/7</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 spport_item">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-3">
+                            <i class="fa fa-bus"></i>
+                        </div>
+                        <div class="col-md-9 col-xs-9">
+                            <h4>Free Shippin & Returns</h4>
+                            <h5>For all Orders over $99</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 spport_item item_mb">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-3">
+                            <i class="fa fa-briefcase"></i>
+                        </div>
+                        <div class="col-md-9 col-xs-9">
+                            <h4>Secure Payment</h4>
+                            <h5>We ensure secure payment</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 spport_item item_mb">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-3">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <div class="col-md-9 col-xs-9">
+                            <h4>Mony Back Guarantee</h4>
+                            <h5>Any back within 30 days</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="shop_item">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12 heading_mobile">
+                        <h1 class="heaading_font" style="font-size: 30px;">Explore Our Shop
+
+                        </h1>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-5 col-xs-12 heading_mobile">
+                        <ul class="shop_menu shop_menu_mobile" style="text-align: center;">
+                            <li style="color: orangered;font-size: 22px;">All</li>
+                            <li style="font-size: 22px;">Living Room</li>
+                            <li style="font-size: 22px;">Bedroom</li>
+                            <li style="font-size: 22px;">Kitchen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-6">
+                            <div class="item_shope">
+                                <img src="img/item1-1.jpg" style="height:300;border-radius: 2px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="item_about item_about_mobile">
+                                    <p style="margin: 0px;">Storaage Cabinet</p>
+                                    <div class="row">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <b style="font-size: 18px;">$59.00</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-6">
+                            <div class="item_shope">
+                                <img src="img/item2.jpg" style="height:300;border-radius: 2px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="item_about item_about_mobile">
+                                    <p style="margin: 0px;">Luxurt Chair</p>
+                                    <div class="row">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <b style="font-size: 18px;">$88.00</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-6">
+                            <div class="item_shope">
+                                <img src="img/item3.jpg" style="height:300;border-radius: 2px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="item_about item_about_mobile">
+                                    <p style="margin: 0px;">Lustre Pendente Aramado Polaris</p>
+                                    <div class="row">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <b style="font-size: 18px;">$410.00</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-6">
+                            <div class="item_shope">
+                                <img src="img/item4.jpg" style="height:300;border-radius: 2px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="item_about item_about_mobile">
+                                    <p style="margin: 0px;">Square Pouf</p>
+                                    <div class="row">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <b style="font-size: 18px;">$359.00</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-6">
+                            <div class="item_shope">
+                                <img src="img/item5.jpg" style="height:300;border-radius: 2px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="item_about item_about_mobile">
+                                    <p style="margin: 0px;">Throw Pillow on Armchair Set</p>
+                                    <div class="row">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <b style="font-size: 18px;">$379.00</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-6">
+                            <div class="item_shope">
+                                <img src="img/item6.jpg" style="height:300;border-radius: 2px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="item_about item_about_mobile">
+                                    <p style="margin: 0px;">Leuchten Direkt HEINRICH</p>
+                                    <div class="row">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <b style="font-size: 18px;">$379.00</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-6">
+                            <div class="item_shope">
+                                <img src="img/item7.jpg" style="height:300;border-radius: 2px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="item_about item_about_mobile">
+                                    <p style="margin: 0px;">Ernst Schwadron Lounge Chair</p>
+                                    <div class="row">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <b style="font-size: 18px;">$578.00 - $600.00</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-6">
+                            <div class="item_shope">
+                                <img src="img/item8.jpg" style="height:300;border-radius: 2px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="item_about item_about_mobile">
+                                    <p style="margin: 0px;">Wood &Rattan Credenza</p>
+                                    <div class="row">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <b style="font-size: 18px;">$145.00</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid offers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12 ">
+                    <div class="offer_silder1 offer_silder_mobile" style="background-image: url(img/offer1.jpg);">
+                        <h1>Hot Deals This Week</h1>
+                        <div class="row">
+                            <div class="col-md-2 timer col-xs-1">
+                                <h3>82 <br>
+                                </h3>
+                                <p>DAYS</p>
+                            </div>
+                            <div class="col-md-2 timer col-xs-1">
+                                <h3>20 <br>
+                                </h3>
+                                <p>HRS</p>
+                            </div>
+                            <div class="col-md-2 timer col-xs-1">
+                                <h3>31 <br>
+                                </h3>
+                                <p>MINS</p>
+                            </div>
+                            <div class="col-md-2 timer col-xs-1">
+                                <h3>44 <br>
+                                </h3>
+                                <p>SECS</p>
+                            </div>
+                        </div>
+                        <a href="#"
+                            style="text-decoration: none;color: #fff; font-size: 15px;padding: 0;margin: 0;">SHOPE NOW
+                            <i class="fa fa-long-arrow-right" style="font-size: 25px;padding-left: 10px;"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 ">
+                    <div class="offer_silder2 offer_silder_mobile" style="background-image: url(img/offer2.jpg);">
+                        <p style="font-size: 18px;padding: 0;margin: 0;">THE BEST ARMCHAIR</p>
+                        <h1 style="color: white; font-size: 45px;padding: 0;margin: 0;">Special Collection
+                        </h1>
+                        <a href="#"
+                            style="text-decoration: none;color: #fff; font-size: 15px;padding: 0;margin: 0;">SHOPE NOW
+                            <i class="fa fa-long-arrow-right" style="font-size: 25px;padding-left: 10px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid brand">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="brand_hading">
+                        <h2 style="font-size: 25px;" class="brand_hading_mobile">Top Weekly Vendors</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-3">
+                            <img src="img/brand_logo1.jpg" class="brand_img">
+                        </div>
+                        <div class="col-md-9 col-xs-9">
+                            <h5 style="padding-left: 10px" class="barnd_text">Wolmart25 Vendor4</h5>
+                            <div class="row barnd_text" style="padding-left: 30px">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 brand_item_mobile">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-3">
+                            <img src="img/brand_logo2.jpg">
+                        </div>
+                        <div class="col-md-9 col-xs-9">
+                            <h5 style="padding-left: 10px">Wolmart25 Vendor4</h5>
+                            <div class="row" style="padding-left: 30px">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 brand_item_mobile">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-3">
+                            <img src="img/brand_logo3.jpg" alt="">
+                        </div>
+                        <div class="col-md-9 col-xs-9">
+                            <h5 style="padding-left: 10px">Wolmart25 Vendor4</h5>
+                            <div class="row" style="padding-left: 30px">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 brand_item_mobile">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-3">
+                            <img src="img/brand_logo4.jpg" alt="">
+                        </div>
+                        <div class="col-md-9 col-xs-9">
+                            <h5 style="padding-left: 10px">Wolmart25 Vendor4</h5>
+                            <div class="row" style="padding-left: 30px">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 10px;height: 220px;">
+        <div class="row">
+            <div class="col-md-3 col-xs-12">
+                <div class="row">
+                    <div class="col-md-8 col-xs-8">
+                        <div class="im1" style=" height: 210px;">
+                            <img src="img/d1_oitem1.jpg" alt="" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div class="img2" style="height: 100px;">
+                                    <img src="img/d1_oitem2.jpg" alt="" style="width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div class="img3" style="height: 100px;">
+                                    <img src="img/d1_oitem3.jpg" alt="" style="width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12 other_item_dekstop">
+                <div class="row">
+                    <div class="col-md-8 col-xs-8" style=" height: 210px;">
+                        <img src="img/d2_oitem1.jpg" alt="" style="width: 110%;">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-4" style="height: 100px;padding-top: 5px;">
+                                <img src="img/d2_oitem2.jpg" alt="" style="width: 110%;">
+                            </div>
+                            <div class="col-md-12 col-xs-4" style="height: 100px;padding-top: 5px;">
+                                <img src="img/d2_oitem3.jpg" alt="" style="width: 110%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12 other_item_dekstop">
+                <div class="row">
+                    <div class="col-md-8 col-xs-8" style=" height: 210px;">
+                        <img src="img/d3_oitem1.jpg" alt="" style="width: 110%;">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-4" style="height: 100px;padding-top: 5px;">
+                                <img src="img/d2_oitem2.jpg" alt="" style="width: 110%;">
+                            </div>
+                            <div class="col-md-12 col-xs-4" style="height: 100px;padding-top: 5px;">
+                                <img src="img/d2_oitem3.jpg" alt="" style="width: 110%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12 other_item_dekstop">
+                <div class="row">
+                    <div class="col-md-8 col-xs-8" style=" height: 210px;">
+                        <img src="img/d4_oitem1.jpg" alt="" style="width: 110%;">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-4" style="height: 100px;padding-top: 5px;">
+                                <img src="img/d4_oitem2.jpg" alt="" style="width: 110%;">
+                            </div>
+                            <div class="col-md-12 col-xs-4" style="height: 100px;padding-top: 5px;">
+                                <img src="img/d4_oitem3.jpg" alt="" style="width: 110%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row" style="padding-top: 20px;">
+                <div class="col-md-3 col-xs-6">
+                    <h2 style="font-size: 25px;">Popular Products</h2>
+                </div>
+                <div class="col-md-3 brand_item_mobile"></div>
+                <div class="col-md-3 brand_item_mobile"></div>
+                <div class="col-md-3 col-xs-6 a_text1" style="padding-top: 20px;">
+                    <a href="#" style="color: black; font-size: 20px;padding-left: 86px;">More
+                        Product
+                        <i class="fa fa-long-arrow-right" style="font-size: 25px;padding-left: 10px;"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="item_shope">
+                                <img src="img/d1_oitem3.jpg" style="height:300;border-radius: 2px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item_about item_about_mobile">
+                                <p style="margin: 0px;">Hexagon Shelf Dreamstime</p>
+                                <div class="row">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <b style="font-size: 18px;">$75.00</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="item_shope">
+                                <img src="img/d2_oitem3.jpg" style="height:300;border-radius: 2px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item_about item_about_mobile">
+                                <p style="margin: 0px;">Gubi Bat Dining Armchair</p>
+                                <div class="row">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <b style="font-size: 18px;">$25.00</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 holl_item4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="item_shope">
+                                <img src="img/d3_oitem3.jpg" style="height:300;border-radius: 2px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item_about item_about_mobile">
+                                <p style="margin: 0px;">Jurou 4 Door Shoe Cabinet</p>
+                                <div class="row">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <b style="font-size: 18px;">$320.00</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 holl_item4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="item_shope">
+                                <img src="img/d4_oitem3.jpg" style="height:300;border-radius: 2px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item_about item_about_mobile">
+                                <p style="margin: 0px;">Chair 23 Armchair</p>
+                                <div class="row">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <b style="font-size: 18px;">$430 .00</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid offers">
+        <div class="container">
+            <div class="row">
+                <h3 style="padding-left: 15px;" class="special_off_text">Special Offers</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xs-12 ">
+                    <div class="offer_silder2 offer_silder_mobile" style="background-image: url(img/bg_50%_sales.jpg);">
+                        <p style="font-size: 18px;padding: 0;margin: 0;">50% SALES</p>
+                        <h2 style="color: white; font-size: 40px;padding: 0;margin: 0;">New Stylish Side
+                            <br>
+                            Armchair
+                        </h2>
+                        <a href="#"
+                            style="text-decoration: none;color: #fff; font-size: 15px;padding: 0;margin: 0;">SHOPE NOW
+                            <i class="fa fa-long-arrow-right" style="font-size: 25px;padding-left: 10px;"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 ">
+                    <div class="offer_silder2 offer_silder_mobile" style="background-image: url(img/bg_15%_sales.jpg);">
+                        <p style="font-size: 18px;padding: 0;margin: 0;">UP TO 15% OFF</p>
+                        <h1 style="color: white; font-size: 45px;padding: 0;margin: 0;">Table Lamp
+                        </h1>
+                        <a href="#"
+                            style="text-decoration: none;color: #fff; font-size: 15px;padding: 0;margin: 0;">SHOPE
+                            NOW
+                            <i class="fa fa-long-arrow-right" style="font-size: 25px;padding-left: 10px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="item_shope">
+                                <img src="img/new_item1.jpg" style="height:300;border-radius: 2px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item_about item_about_mobile">
+                                <p style="margin: 0px;">Selly Arm Sofa With Ottoman</p>
+                                <div class="row">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <b style="font-size: 18px;">$60.00</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="item_shope">
+                                <img src="img/new_item2.jpg" style="height:300;border-radius: 2px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item_about item_about_mobile">
+                                <p style="margin: 0px;">LUTON televizni stolek RTV3S</p>
+                                <div class="row">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <b style="font-size: 18px;">$88.00</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 holl_item4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="item_shope">
+                                <img src="img/new_item3.jpg" style="height:300;border-radius: 2px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item_about item_about_mobile">
+                                <p style="margin: 0px;">Reception Chair Foröl</p>
+                                <div class="row">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <b style="font-size: 18px;">$160.00</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 holl_item4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="item_shope">
+                                <img src="img/new_item4.jpg" style="height:300;border-radius: 2px;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item_about item_about_mobile">
+                                <p style="margin: 0px;">Vintage & Gold Table Lamp</p>
+                                <div class="row">
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </div>
+                                <b style="font-size: 18px;">$280.00</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="container download_app">
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="button_contain">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-6">
+                                <button
+                                    style="border: 1px solid black;padding: 0;background-color: black;border-radius: 2px;margin-top: 5px;"><img
+                                        src="img/app_store.png" style="width: 150px;border:none;height: 50px;"></button>
+                            </div>
+                            <div class="col-md-12 col-xs-6">
+                                <button
+                                    style="border: 1px solid black;padding: 0;background-color: black;border-radius: 2px;margin-top: 5px;"><img
+                                        src="img/google-play.png"
+                                        style="width: 150px;border:none;height: 50px;"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4" style="padding-top: 45px;">
+                    <img src="img/download_app.png">
+                </div>
+                <div class="col-md-5 col-xs-5">
+                    <div class="button_contain" style="color: white;">
+                        <h2>Download Wolmart App Now!</h2>
+                        <p>Shopping fastly and easily more with our app. Get a link <br>to download the app on your
+                            phone.
+                        </p>
+                        <input type="text" placeholder="Enter your email.." style="background-color: transparent;width: 80%;outline: 0; 
+                            border-width: 0 0 2px;"><i class="fa fa-telegram" style="font-size: 18px;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="container download_app_mobile">
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <div class="button_contain_mobile">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-6">
+                                <button
+                                    style="border: 1px solid black;padding: 0;background-color: black;border-radius: 2px;margin-top: 5px;"><img
+                                        src="img/app_store.png"
+                                        style="width: 260px;border:none;height: 100px;"></button>
+                            </div>
+                            <div class="col-md-12 col-xs-6">
+                                <button
+                                    style="border: 1px solid black;padding: 0;background-color: black;border-radius: 2px;margin-top: 5px;"><img
+                                        src="img/google-play.png"
+                                        style="width: 245px;border:none;height: 100px;"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12">
+                    <div class="button_contain_mobile" style="color: white;">
+                        <h2 style="font-size: 42px;">Download Wolmart App Now!</h2>
+                        <p style="font-size: 24px;">Shopping fastly and easily more with our app. Get a link <br>to
+                            download the app on your
+                            phone.
+                        </p>
+                        <input type="text" placeholder="Enter your email.." style="background-color: transparent;
+                        width: 84%;
+                        outline: 0;
+                        border-width: 0 0 2px;
+                        height: 69px;"><i class="fa fa-telegram" style="font-size: 30px;"></i>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12" style="padding-top: 45px;padding-left: 245px;">
+                    <img src="img/download_app.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container ">
+            <div class="row" style="padding-top: 20px;">
+                <div class="col-md-3 col-xs-6">
+                    <h2 style="font-size: 25px;">Recent News</h2>
+                </div>
+                <div class="col-md-3 brand_item_mobile"></div>
+                <div class="col-md-3 brand_item_mobile"></div>
+                <div class="col-md-3 col-xs-6 a_text " style="padding-top: 20px;">
+                    <a href="#" style="color: black; font-size: 20px;padding-left: 86px;">ARTICLES
+                        <i class="fa fa-long-arrow-right" style="font-size: 25px;padding-left: 10px;"></i></a>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+                <div class="col-md-4 l_item col-xs-6" style="background-image: url(img/last_slider1.jpg);">
+                    <div class="item_text">
+                        <p>Clothes,Hobbies</p>
+                        <h4>Aliquam tincidunt mauris eurisus</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 l_item col-xs-6" style="background-image: url(img/last_slider2.jpg);">
+                    <div class="item_text">
+                        <p>Clothes,Fashion</p>
+                        <h4>Cras ornare tristique elit</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 l_item col-xs-6 holl_item3" style="background-image: url(img/last_slider3.jpg);">
+                    <div class="item_text">
+                        <p>Clothes,Fashion,Lifestyle</p>
+                        <h4>Vivamus vestibulum ntulla nec ante</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row client_brand">
+                <div class="col-md-2 col-xs-4">
+                    <div class="brand_logo">
+                        <img src="img/c_logo1.png">
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-4">
+                    <div class="brand_logo">
+                        <img src="img/c_logo2.png">
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-4">
+                    <div class="brand_logo">
+                        <img src="img/c_logo3.png">
+                    </div>
+                </div>
+                <div class="col-md-2 holl_item4">
+                    <div class="brand_logo">
+                        <img src="img/c_logo4.png">
+                    </div>
+                </div>
+                <div class="col-md-2 holl_item4">
+                    <div class="brand_logo">
+                        <img src="img/c_logo5.png">
+                    </div>
+                </div>
+                <div class="col-md-2 holl_item4">
+                    <div class="brand_logo">
+                        <img src="img/c_logo6.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer_section">
+        <div class="container">
+            <div class="row footer_row">
+                <div class="col-md-3 col-xs-12">
+                    <img src="img/logo-footer.png">
+                    <p style="padding-top: 20px;">Got Question? Call us 24/7</p>
+                    <h4>1-800-570-7777</h4>
+                    <p style="font-size: 12px;color: rgba(150, 147, 147, 0.685);">Register now to get updates on pronot
+                        get up ions & coupons ster now
+                        toon.</p>
+                </div>
+                <div class="col-md-3 footer_col col-xs-12">
+                    <h4 class="footer_header">COMPANY</h4>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Team Member</li>
+                        <li>Career</li>
+                        <li>Contact Us</li>
+                        <li>Affilate</li>
+                        <li>Order History</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer_col col-xs-12">
+                    <h4 class="footer_header">MY ACCOUNT</h4>
+                    <ul>
+                        <li>Track My Order</li>
+                        <li>View Cart</li>
+                        <li>Sign In</li>
+                        <li>Help</li>
+                        <li>My Wishlist</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer_col col-xs-12">
+                    <h4 class="footer_header">CUSTOMER SERVICE</h4>
+                    <ul>
+                        <li>Payment Methods</li>
+                        <li>Money-back guarantee!</li>
+                        <li>Products Returns</li>
+                        <li>Support Center</li>
+                        <li>Shipping</li>
+                        <li>Term and Conditions</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row last_row">
+                <div class="col-md-4 col-xs-12">
+                    <p>Copyright © 2024 Wolmart Store. All Rights Reserved</p>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-5 col-xs-12">
+                    <div class="row">
+                        <p>We're using safe payment for <img src="img/payment1.png"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer_section_mobile">
+        <div class="container">
+            <div class="row footer_row">
+                <div class="col-md-3 col-xs-12">
+                    <img src="img/logo-footer.png">
+                    <p style="padding-top: 20px;">Got Question? Call us 24/7</p>
+                    <h4>1-800-570-7777</h4>
+                    <p style="font-size: 12px;color: rgba(150, 147, 147, 0.685);">Register now to get updates on pronot
+                        get up ions & coupons ster now
+                        toon.</p>
+                </div>
+                <div class="col-md-3 footer_col col-xs-12">
+                    <h4 class="footer_header">COMPANY</h4>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Team Member</li>
+                        <li>Career</li>
+                        <li>Contact Us</li>
+                        <li>Affilate</li>
+                        <li>Order History</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer_col col-xs-12">
+                    <h4 class="footer_header">MY ACCOUNT</h4>
+                    <ul>
+                        <li>Track My Order</li>
+                        <li>View Cart</li>
+                        <li>Sign In</li>
+                        <li>Help</li>
+                        <li>My Wishlist</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer_col col-xs-12">
+                    <h4 class="footer_header">CUSTOMER SERVICE</h4>
+                    <ul>
+                        <li>Payment Methods</li>
+                        <li>Money-back guarantee!</li>
+                        <li>Products Returns</li>
+                        <li>Support Center</li>
+                        <li>Shipping</li>
+                        <li>Term and Conditions</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row last_row">
+                <div class="col-md-4 col-xs-12">
+                    <p>Copyright © 2024 Wolmart Store. All Rights Reserved</p>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-5 col-xs-12">
+                    <div class="row">
+                        <p>We're using safe payment for <img src="img/payment1.png"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
